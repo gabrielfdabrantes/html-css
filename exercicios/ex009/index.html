@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trablhando com listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol type="I"> <!--1 (padão) A a I i-->
+        <li>Acordar</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+
+    <h2>Listas não ordenadas</h2>
+    <ul type="square"> <!--disc (padrão) square circle-->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Ovos </li>
+        <li>Cuscuzz</li>
+        <li>Frango</li>
+    </ul>   
+
+    <h2>Minhas linguagens favoritas</h1>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+
+<!-- É posível juntar listas ordenadas e não ordenadas. As listas internas sempre terão deslocamento para a direita e o tipo delas, por padrão, sempre mudam.-->
+
+    <h2>Meus jogos favoritos</h2> <!--Exemplo de listas mistas.-->
+    <ol>
+         <li>Nitendo</li>
+            <ul type="disc">
+             <li>Mario Bros</li>
+            <ul type="square">
+             <li>Mario Bros 2</li>
+             <li>Ninja Gaiden</li>
+        </ul>
+            <li>Mario Lost Leves</li>
+         </ul>
+    <br>
+        <li>SuperNitendo</li>
+            <ul>
+             <li>Mario Kart</li>
+             <li>Donkey Kong</li>
+             <li>Pokemon</li>
+            </ul>
+    <br>   
+        <li>PlayStation</li>
+        <ul>
+            <li>PES</li>
+            <li>Crash</li>
+            <li>Frog 2</li>
+        </ul>
+    </ol>
+
+    <!-- Usada como uma espécie de dicionário, além de ajudar os mecanismos de busca. -->
+    <h2>Listas de definição</h2>
+    <dl> <!-- definition list-->
+        <dt>HTML</dt> <!-- definition term -->
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd> <!-- definition description-->
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
+</body>
+</html>

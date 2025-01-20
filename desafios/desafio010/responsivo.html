@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de responsividade</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            /* width: 800px; usando apenas o width, está deixando o site responsivo sim porém com alguma limitação, mas existe uma forma melhor para cuidar da responsivide, com largura mínima e máxima. */
+
+            min-width: 300px;
+            max-width: 800px;
+            margin: auto; /* conteúdo alinhado ao centro. */
+        }
+
+        /* apenas colocando a largura em 100% resolve o problema da responsividade da imagem, mas ela irá diminuir de tamanho e talvez fique muito pequena em aparelhos móveis. Existe outra forma melhor para tratar essa questão da responsividade da imagem.*/
+
+         img {
+            width: 100%;
+        } 
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando responsividade</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias pariatur voluptate nihil aliquid voluptatum praesentium velit, laudantium sunt iusto fuga cumque voluptates nulla sequi tempora reprehenderit, facere, veniam delectus optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, veritatis similique! Soluta ipsa optio quidem doloremque necessitatibus mollitia corrupti repudiandae praesentium cupiditate id eaque assumenda, iusto iure dolore quis. Culpa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum molestiae porro assumenda asperiores corporis laboriosam itaque neque ullam voluptates ratione? Molestias numquam sit quasi, temporibus esse consequuntur dolor repellendus consequatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet quos neque libero. Excepturi doloremque quaerat similique mollitia magni a, fugit officiis repellat aperiam veritatis aspernatur, eveniet nostrum maxime sunt accusantium.</p>
+
+        <picture>
+            <source media="(max-width: 600px)" srcset="pacote-projeto-d010/imagens/irina-blok-pq.jpg">
+            <img src="pacote-projeto-d010/imagens/irina-blok.jpg" alt="Irina Blok">
+        </picture>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias pariatur voluptate nihil aliquid voluptatum praesentium velit, laudantium sunt iusto fuga cumque voluptates nulla sequi tempora reprehenderit, facere, veniam delectus optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, veritatis similique! Soluta ipsa optio quidem doloremque necessitatibus mollitia corrupti repudiandae praesentium cupiditate id eaque assumenda, iusto iure dolore quis. Culpa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum molestiae porro assumenda asperiores corporis laboriosam itaque neque ullam voluptates ratione? Molestias numquam sit quasi, temporibus esse consequuntur dolor repellendus consequatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet quos neque libero. Excepturi doloremque quaerat similique mollitia magni a, fugit officiis repellat aperiam veritatis aspernatur, eveniet nostrum maxime sunt accusantium.</p>
+    </main>
+</body>
+</html>

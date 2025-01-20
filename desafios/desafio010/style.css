@@ -1,0 +1,102 @@
+@charset "UTF-8";
+@font-face {
+    font-family:'robo';
+    src: url(pacote-projeto-d010/fontes/idroid.otf)format(opentype);
+    font-weight: normal;
+    font-style: normal;
+    }
+
+body {
+    background-color: #85E1AD;
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+header {
+    color: white;
+    padding: 10px;
+    margin: -9px;
+    background-color: #5fa27c;
+    background-image: linear-gradient(to top, #266b44, #38a165, #4ee08d);
+    width: auto;
+    text-align: center;
+}
+header > p {
+    color: #8ec9a8;
+}
+.pre-video{
+    padding-bottom: 20px;
+}
+header > nav {
+    text-align: left;
+}
+nav > a {
+    text-decoration: none;
+    color: white;
+    padding-right: 30px;
+}
+main{
+    background-color: white;
+    margin: -32px 300px 35px 300px;
+    padding-bottom: 10px;
+    border-radius: 0px 0px 12px 12px;
+}
+
+#primeiro > h1 {
+    padding-top: 30px;
+    font-size: 2em;
+}
+section {
+    margin: 20px;
+}
+
+.fonte {
+    font-family: 'robo';
+    color: #215d3b;
+}
+
+h2{
+    background-image: linear-gradient(to right, #2e835345, #58fd9f67, #3fb77300);
+    
+}
+.video {
+    background-color: #205838;
+    margin: -20px;
+}
+.ultimo-total{
+    padding-top: 12px;
+   
+}
+
+.ultimo {
+    background-color: #b1f4ce;
+    border-radius: 10px 10px 12px 12px;
+    padding-bottom: 12px;
+    font-weight:600;
+    
+}
+.ultimo > div {
+    background-color: #77ca9b;
+    padding: 0.4px 15px;
+    border-radius: 12px 12px 0px 0px;
+    color: white;
+    font-weight: bolder;
+}
+
+.ultimo > p {
+   padding-left: 12px;
+   padding-right: 12px;
+   text-align: justify;
+}
+ul{
+    display: inline-block;
+    padding-right: 160px;
+}
+footer {
+    text-align: center;
+    background-color: #205838;
+    color: white;
+   padding: 10px;
+   margin: -15px;
+   border-width: 10px;
+}

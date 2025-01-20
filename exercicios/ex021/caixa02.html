@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div></div>
+    <span></span>
+ <!-- Tags de agrupamento que ainda são utilizadas mas não possuem um valor semântico no HTML5. -->
+    
+ <header>  <!--header=cabeçalho. Normalmente inclui h1-h6 e subtítulos.-->
+
+    <h1>Meu site</h1>
+    <nav> <!--indica que haverá links dentro. nav vem de navegação. Muito usado na criação de Menus.-->
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+    
+ </header>
+ <main> <!--conteúdo principal-->
+    <section id="assuntos"> 
+        <p>Esporte</p>
+        <p>Política</p>
+        <p>Tecnologia</p>
+    </section> <!--cria sessões para a página. É uma agrupamento temático de de conteúdos, tipicamente como um cabeçalho.-->
+    <section id="noticias">
+        <article> <!--contém um conteúdo que pode ser lido de forma independente e dizem respeito a um mesmo assunto.-->
+            <h2>Notícias sobre o Brasil</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe quasi ab fugit eius illo cumque quibusdam impedit et quis repellat quidem debitis, veniam, nostrum blanditiis culpa excepturi iure. Nobis, culpa.</p>
+            <aside> <!--conteúdo relativo a-->
+                <p>Artigo escrito por José da Silva</p>
+            </aside>
+        </article>
+        <article> <!-- proposta de estrutura. NÃO É REGRA QUE DEVE SER ASSIM. --> 
+         <figure>
+            <img src="modelo-de-estrutura-pagina-web.png" alt="">
+            <figcaption>Proposta de estrutura.</figcaption>
+        </figure>
+        </article>
+    </section>
+ </main>
+
+<footer> <!--rodapé-->
+    <p>
+        Desenvolvido pelo CursoemVídeo
+    </p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/* Todo id em HTML é repreentado com # em CSS (apenas 1 elemento por documento) */
+/* Toda class em HTML é representado com . em CSS (vários elementos) */
+
+body {
+    background-color: rgb(197, 243, 197);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: rgb(44, 225, 86);
+}
+
+#principal {
+    text-align: center;
+    background-color: green;
+    color: white;
+}
+
+h2 {
+    color: rgb(65, 190, 65);
+}
+
+.basico {
+    color: rgb(65, 190, 65);
+}
+
+.intermediario {
+    color: rgb(190, 173, 65);
+}
+
+.avancado {
+    color: rgb(190, 65, 65);
+}
+
+.destaque {
+    background-color: rgba(201, 201, 57, 0.289);
+}
