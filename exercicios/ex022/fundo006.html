@@ -27,18 +27,25 @@
             
            /* 
             shorthand - background
-                color > image > position > repeat > size* > attachment
+                color > image > position > repeat > size * > attachment
 
                 obs: apesar de oficialmente ser possível colocar o size no shorthand, ele não funciona. então o size deve bg-size deve ser feita em outra declaração.
            */
         }
         main{
             background-color: white;
-            max-width: 400px;
+            max-width: 500px;
             padding: 10px;
             margin: auto;
             border: 2px solid darkblue;
             border-radius: 15px;
+        }
+
+        main > h1 {
+            text-align: center;
+            border: 1px double black;
+            margin: 5px 50px 0px 50px;
+            border-radius: 4px;
         }
     </style>
 </head>
