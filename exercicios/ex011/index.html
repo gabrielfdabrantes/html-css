@@ -9,7 +9,9 @@
     <h1>Imagem dinâmica</h1>
     <p>Tente abrir esse site em vários dispostivos diferentes ou simplesmente aumente e diminuua o tamanho do seu navegador.</p>
     <picture>
-        <!-- a tag <source> é comunmente usado para oferecer o mesmo conteúdo de mídia em vários formatos de arquivo para fornecer compatibilidade com os navegadores e, no caso das imagens, adaptando-as para diferentes tamanhos de tela. (celular, tablet, computador, tv, etc.) -->
+        <!-- a tag <source> é comumente usado para oferecer o mesmo conteúdo de mídia em vários formatos de arquivo para fornecer compatibilidade com os navegadores e, no caso das imagens, adaptando-as para diferentes tamanhos de tela. (celular, tablet, computador, tv etc.) -->
+
+        <!-- Nesse exemplo, o tamanho da imagem irá se adaptar com o tamanho máximo definido em cada source. -->
         <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
         <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
         <img src="imagens/foto-g.png" alt="Imagem flexível grande">
@@ -19,8 +21,8 @@
     <p>Vamos aprender a colocar um áudio no HTML5</p>
 
     <!-- o atributo preload possui 3 valores possíveis: auto (irá carregar o arquivo assim que a página abrir, mesmo sem apertar o play); metadata (irá carregar apenas informações do arquivo); none (não irá carregar até que clique no play).-->
-     <!-- o atributo controls irá fazer que apareça os controles.-->
-      <!-- autoplay irá fazzer com que o áudio comece assim que abra a página (não compatível com todos os navegadores).-->
+    <!-- o atributo controls irá fazer que apareça os controles.-->
+    <!-- autoplay irá fazzer com que o áudio comece assim que abra a página (não compatível com todos os navegadores).-->
     <!-- loop irá fazer com que o áudio retorne ao começo assim que terminar.-->
     <audio preload="metadata" controls autoplay loop>
         <source src="midia/musica-01.mp3" type="audio/mpeg">
