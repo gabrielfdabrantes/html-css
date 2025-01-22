@@ -3,22 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
-            height: 100vh;
+            /* height: 100vh;
             background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
-            background-repeat: no-repeat;
+            background-position: center center;
+            background-repeat: no-repeat; 
+            background-size: cover;
+            background-attachment: fixed;
+            */
 
             /* 
             além dos valores em número (px ou %, por exemplo), o bg-size pode ser declarado em valores escritos. Por padrão, o valor é 'auto'. O 'contain' mostra 100% da imagem exibida, sem corte algum, aumentando ou diminuindo a tela. O 'cover' irá cobrir a tela inteira mesmo que corte alguma parte da imagem da tela.
              */
+          
+
+           /* o padrão do bg-attachment é o ´scrool´, ou seja, o fundo irá rolar junto com o conteúdo. o 'fixed' faz com que o bg permaneça fixo enquanto oo conteúdo continue sua rolagem.  */
+
+           background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
            background-size: cover;
+            
+           /* 
+            shorthand - background
+                color > image > position > repeat > size* > attachment
+
+                obs: apesar de oficialmente ser possível colocar o size no shorthand, ele não funciona. então o size deve bg-size deve ser feita em outra declaração.
+           */
         }
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 2px solid darkblue;
@@ -30,6 +46,19 @@
     <main>
         <h1>Teste de imagem de fundo</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore facilis consequuntur architecto sunt autem exercitationem vel delectus illum. Aut architecto id nostrum facere! Sequi voluptate aspernatur natus ullam? Eaque, excepturi!</p>
+        <p>Debitis nobis voluptatum sapiente. Doloremque labore tempore minus omnis quidem quod! Velit, quam unde animi, laudantium tempore iure numquam ex reiciendis eos veniam eum explicabo alias corporis minus dolor amet!</p>
+        <p>Consequuntur quod at totam ipsum repudiandae. Distinctio praesentium nulla assumenda harum itaque accusantium alias perspiciatis optio ipsum quisquam. Minus, doloribus officiis dolorem voluptatibus expedita voluptate reprehenderit quidem libero alias eligendi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore facilis consequuntur architecto sunt autem exercitationem vel delectus illum. Aut architecto id nostrum facere! Sequi voluptate aspernatur natus ullam? Eaque, excepturi!</p>
+        <p>Debitis nobis voluptatum sapiente. Doloremque labore tempore minus omnis quidem quod! Velit, quam unde animi, laudantium tempore iure numquam ex reiciendis eos veniam eum explicabo alias corporis minus dolor amet!</p>
+        <p>Consequuntur quod at totam ipsum repudiandae. Distinctio praesentium nulla assumenda harum itaque accusantium alias perspiciatis optio ipsum quisquam. Minus, doloribus officiis dolorem voluptatibus expedita voluptate reprehenderit quidem libero alias eligendi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore facilis consequuntur architecto sunt autem exercitationem vel delectus illum. Aut architecto id nostrum facere! Sequi voluptate aspernatur natus ullam? Eaque, excepturi!</p>
+        <p>Debitis nobis voluptatum sapiente. Doloremque labore tempore minus omnis quidem quod! Velit, quam unde animi, laudantium tempore iure numquam ex reiciendis eos veniam eum explicabo alias corporis minus dolor amet!</p>
+        <p>Consequuntur quod at totam ipsum repudiandae. Distinctio praesentium nulla assumenda harum itaque accusantium alias perspiciatis optio ipsum quisquam. Minus, doloribus officiis dolorem voluptatibus expedita voluptate reprehenderit quidem libero alias eligendi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore facilis consequuntur architecto sunt autem exercitationem vel delectus illum. Aut architecto id nostrum facere! Sequi voluptate aspernatur natus ullam? Eaque, excepturi!</p>
+        <p>Debitis nobis voluptatum sapiente. Doloremque labore tempore minus omnis quidem quod! Velit, quam unde animi, laudantium tempore iure numquam ex reiciendis eos veniam eum explicabo alias corporis minus dolor amet!</p>
+        <p>Consequuntur quod at totam ipsum repudiandae. Distinctio praesentium nulla assumenda harum itaque accusantium alias perspiciatis optio ipsum quisquam. Minus, doloribus officiis dolorem voluptatibus expedita voluptate reprehenderit quidem libero alias eligendi.</p>
+        <p>Debitis nobis voluptatum sapiente. Doloremque labore tempore minus omnis quidem quod! Velit, quam unde animi, laudantium tempore iure numquam ex reiciendis eos veniam eum explicabo alias corporis minus dolor amet!</p>
+        <p>Consequuntur quod at totam ipsum repudiandae. Distinctio praesentium nulla assumenda harum itaque accusantium alias perspiciatis optio ipsum quisquam. Minus, doloribus officiis dolorem voluptatibus expedita voluptate reprehenderit quidem libero alias eligendi.</p>
         <p>Debitis nobis voluptatum sapiente. Doloremque labore tempore minus omnis quidem quod! Velit, quam unde animi, laudantium tempore iure numquam ex reiciendis eos veniam eum explicabo alias corporis minus dolor amet!</p>
         <p>Consequuntur quod at totam ipsum repudiandae. Distinctio praesentium nulla assumenda harum itaque accusantium alias perspiciatis optio ipsum quisquam. Minus, doloribus officiis dolorem voluptatibus expedita voluptate reprehenderit quidem libero alias eligendi.</p>
     </main>
