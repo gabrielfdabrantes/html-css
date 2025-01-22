@@ -53,8 +53,29 @@ article{
 article > aside {
     background-color: rgb(167, 167, 167);
 }
+.centralizar{
+    position: relative;
+    padding-top: 20px;
+}
+
+.centralizado{
+    position: absolute;
+    top: -26px;
+    left: 110px;
+   
+}
+.centralizado > h2 {
+    background-color: white;
+    border-radius: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.358);
+}
 figure > img {
     height: 500px;
+}
+figcaption {
+    padding-left: 15%;
 }
 footer > p {
     margin: 0px;
