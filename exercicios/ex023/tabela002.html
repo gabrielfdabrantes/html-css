@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        table {
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            padding-bottom: 4px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        /* essa pseudo-class faz com que a tabela tenha o efeito zebrado. É possível definir de diversas maneiras. Nesse exexmplo, coloquei que a cada 2 linhas, o bg seria de outra cor. Também fazer colocando 'odd', que signfica as linhas ímpares e 'even' para as pares*/
+        tbody>tr:nth-child(2n) {
+            background-color: lightgrey;
+        }
+
+        thead,
+        tfoot {
+            background-color: black;
+            color: white;
+        }
+
+        .num {
+            text-align: right;
+        }
+
+        div {
+            display: inline-block;
+        }
+
+        div>h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Uso de tabelas grandes</h1>
+        <!--
+        Anatomia das tabelas grandes:
+            Table
+                Caption
+                THead
+                    tr, td, th
+                TBody
+                    tr, td, th
+                TFoot
+                    tr, td, th
+        -->
+        <!--
+            O atributo 'scope' é usado para ajudar os mecanismos de busca entenderem aquilo que está colocado na tabela. Ele é usado dentro da tag 'th', dando a referência de que aquele cabeçalho está se referindo.
+        -->
+        <table>
+            <thead>
+                <!--o valor 'col' atribui-se quando o dado está abaixo do cabeçalho.-->
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </thead>
+            <caption>
+                População das Unidades Federativas
+            </caption>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">45 919 049</td>
+                </tr>
+                <tr class="escuro">
+                    <td>Minas Gerais</td>
+                    <td class="num">21 168 791</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">17 264 943</td>
+                </tr>
+                <tr class="escuro">
+                    <td>Bahia</td>
+                    <td class="num">14 873 064</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="num">11 433 957</td>
+                </tr>
+                <tr class="escuro">
+                    <td>Rio Grande do Sul</td>
+                    <td class="num">11 377 239</td>
+                </tr>
+                <tr>
+                    <td>Pernambuco</td>
+                    <td class="num">9 557 071</td>
+                </tr>
+                <tr class="escuro">
+                    <td>Ceará</td>
+                    <td class="num">9 132 078</td>
+                </tr>
+                <tr>
+                    <td>Pará</td>
+                    <td class="num">8 602 865</td>
+                </tr>
+                <tr class="escuro">
+                    <td>Santa Catarina</td>
+                    <td class="num">7 164 788</td>
+                </tr>
+                <tr>
+                    <td>Maranhão</td>
+                    <td class="num">7 075 181</td>
+                </tr>
+                <tr class="escuro">
+                    <td>Goiás</td>
+                    <td class="num">7 018 354</td>
+                </tr>
+                <tr>
+                    <td>Amazonas</td>
+                    <td class="num">4 144 597</td>
+                </tr>
+                <tr class="escuro">
+                    <td>Espírito Santo</td>
+                    <td class="num">4 018 650</td>
+                </tr>
+                <tr>
+                    <td>Paraíba</td>
+                    <td class="num">4 018 127</td>
+                </tr>
+                <tr class="escuro">
+                    <td>Rio Grande do Norte</td>
+                    <td class="num">3 506 853</td>
+                </tr>
+                <tr>
+                    <td>Mato Grosso</td>
+                    <td class="num">3 484 466</td>
+                </tr>
+                <tr class="escuro">
+                    <td>Alagoas</td>
+                    <td class="num">3 337 357</td>
+                </tr>
+                <tr>
+                    <td>Piauí</td>
+                    <td class="num">3 273 227</td>
+                </tr>
+                <tr class="escuro">
+                    <td>Distrito Federal</td>
+                    <td class="num">3 015 268</td>
+                </tr>
+                <tr>
+                    <td>Mato Grosso do Sul</td>
+                    <td class="num">2 778 986</td>
+                </tr>
+                <tr class="escuro">
+                    <td>Sergipe</td>
+                    <td class="num">2 298 696</td>
+                </tr>
+                <tr>
+                    <td>Rondônia</td>
+                    <td class="num">1 777 225</td>
+                </tr>
+                <tr class="escuro">
+                    <td>Tocantins</td>
+                    <td class="num">1 572 866</td>
+                </tr>
+
+                <tr>
+                    <td>Acre</td>
+                    <td class="num">881 935</td>
+                </tr>
+                <tr class="escuro">
+                    <td>Amapá</td>
+                    <td class="num">845 731</td>
+                </tr>
+                <tr>
+                    <td>Roraima</td>
+                    <td class="num">605 761</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <!--o valor 'row' atribui-se quando o dado, em relação ao cabeçalho, está na mesma linha.-->
+                    <th scope="row">Total de habitantes</th>
+                    <td class="num"><strong>210 147 125</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+
+</html>
