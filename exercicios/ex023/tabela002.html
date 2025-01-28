@@ -14,6 +14,7 @@
         table {
             width: 400px;
             border-collapse: collapse;
+            position: relative;
         }
 
         caption {
@@ -22,8 +23,7 @@
             text-decoration: underline;
         }
 
-        td,
-        th {
+        td, th {
             border: 1px solid black;
             padding: 10px;
         }
@@ -33,8 +33,13 @@
             background-color: lightgrey;
         }
 
-        thead,
-        tfoot {
+        thead {
+            /* essas propriedades, juntamente com a position 'relative' no corpo da tabela, cria o efeito de cabeçalho fixo. Ela é válida para tabelas grandes e com muitas colunas. */
+            position: sticky;
+            top: -1px;
+        }
+
+        thead, tfoot {
             background-color: black;
             color: white;
         }
@@ -199,6 +204,15 @@
             </tfoot>
         </table>
     </div>
+
+    <p><span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, qui delectus excepturi at obcaecati dicta sit? Adipisci laborum odio harum consequatur illo hic. Sapiente, autem. Quaerat ipsam accusamus delectus illo.</span><span>Voluptate quidem fuga ipsum assumenda ipsa, cupiditate nihil, recusandae labore est optio cum vero dolor quisquam nisi? Velit nostrum sed neque ipsa amet, quos alias rerum in ullam, nesciunt dolores!</span></p>
+    <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam quaerat deleniti, nemo porro delectus provident quas tenetur et, minima, quam aliquid exercitationem alias reiciendis atque voluptatem dolores aperiam fugit officia?</span><span>Ad eaque vero sapiente laborum itaque asperiores quae provident soluta, necessitatibus modi aliquam! Ducimus earum at, sequi, consectetur ullam praesentium accusamus fugiat labore perferendis sunt temporibus veniam, voluptatem delectus ad.</span></p>
+    <p><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas nemo esse quos. Ea, sed quod! Magni tempore laudantium in dolorem non, maiores assumenda ab, voluptas iste repellendus obcaecati vitae placeat!</span><span>Quod assumenda maiores expedita hic placeat rem tempore voluptas quae magni officiis necessitatibus architecto laboriosam incidunt, sunt ad, quas possimus esse! Ex cumque dignissimos, ipsa nemo nihil eius reiciendis aut.</span></p>
+    <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, nobis. Error voluptate sed dolorum commodi pariatur asperiores esse odit quibusdam iusto dolore similique ducimus quam molestiae optio, libero laborum. Dicta.</span><span>Excepturi veniam voluptates, error architecto quos esse culpa exercitationem placeat cumque dignissimos at a illo, doloribus commodi quae quidem? Veritatis, provident. Sint, facere! Expedita voluptatibus modi quas consequuntur nemo ipsum!</span></p>
+    <p><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet aspernatur magnam itaque dicta fuga nemo, deserunt tempore cupiditate quos error quia voluptate et quibusdam voluptas perspiciatis asperiores explicabo veniam laborum!</span><span>Soluta eveniet nostrum, accusamus atque ab qui. Sint possimus facilis minus? Aut vero, incidunt sit consectetur officiis, ut nobis vitae hic excepturi, eos tenetur maxime perferendis minima temporibus rem. Atque?</span></p>
+    <p><span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, qui delectus excepturi at obcaecati dicta sit? Adipisci laborum odio harum consequatur illo hic. Sapiente, autem. Quaerat ipsam accusamus delectus illo.</span><span>Voluptate quidem fuga ipsum assumenda ipsa, cupiditate nihil, recusandae labore est optio cum vero dolor quisquam nisi? Velit nostrum sed neque ipsa amet, quos alias rerum in ullam, nesciunt dolores!</span></p>
+    <p><span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, qui delectus excepturi at obcaecati dicta sit? Adipisci laborum odio harum consequatur illo hic. Sapiente, autem. Quaerat ipsam accusamus delectus illo.</span><span>Voluptate quidem fuga ipsum assumenda ipsa, cupiditate nihil, recusandae labore est optio cum vero dolor quisquam nisi? Velit nostrum sed neque ipsa amet, quos alias rerum in ullam, nesciunt dolores!</span></p>
+    <p><span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, qui delectus excepturi at obcaecati dicta sit? Adipisci laborum odio harum consequatur illo hic. Sapiente, autem. Quaerat ipsam accusamus delectus illo.</span><span>Voluptate quidem fuga ipsum assumenda ipsa, cupiditate nihil, recusandae labore est optio cum vero dolor quisquam nisi? Velit nostrum sed neque ipsa amet, quos alias rerum in ullam, nesciunt dolores!</span></p>
 </body>
 
 </html>
