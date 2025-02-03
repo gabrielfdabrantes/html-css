@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframe</title>
+</head>
+<body>
+   <h1>Testando o uso de um iframe</h1> 
+   <p>
+        Acessando o site do 
+            <iframe height="200px" width="300px" scrolling="no" src="https://www.cursoemvideo.com" frameborder="0">
+                <a href="https://www.cursoemvideo.com">Curso em Vídeo</a>
+                <!-- tudo que estiver dentro do iframe só irá aparecer caso o dispositivo não tenha capacidade de exibir o conteúdo do iframe. -->
+            </iframe>
+        para aprender a programar.
+    </p>
+    <p>
+        Acessando o site do 
+            <iframe src="https://ge.globo.com/" frameborder="1">
+                <a href="https://ge.globo.com/">Globo Esporte</a>
+            </iframe>
+        sem fazer nenhum alteração de tamanho, largura ou rolagem.
+    </p>
+    <!-- basicmanete essa ferramenta cria uma aba nova, porém dentro da página. -->
+    <!-- Tamanho padrão: 300px largura e 150px altura. -->
+    <!--As configurações realizadas nas CSS são soberanas as configurações realizadas dentro do elemento HTML.-->
+    <!-- O parâmetro 'scrolling="no"' serve para, caso o site possua uma barra de rolagem, ele congele e não permita rolar a página. Nota-se que esse parâmetro não funciona bem em todoss os navegadores, sendo necessário ter cuidado ao usá-lo. -->
+     <!--Além do valor 'no', o 'scrolling' pode ter os valores 'auto' e 'yes'-->
+<h1>Outro teste</h1>
+<p>
+    Esse texto irá ter um exemplo de tag &lt;iframe&gt; logo a seguir
+        <iframe>
+
+        </iframe>
+    e depois a continuação do texto normalmente. Nota-se que foi criado um quadro que já vem com uma borda, como padrão. O iframe é um elemento <em>inline</em>.
+</p>
+
+<br>
+
+<h1>Alguns sites não podem ser usados dentro de um iframe</h1>
+<p>
+    O site do google não permite utilizar a tag iframe dessa forma pois possui uma proteção que o conteúdo não seja exibidio dentro de sites de terceiros. Veja a seguir como aparece ao tentar utilizar o imframe para introduzir o site do google 
+        <iframe src="https://www.google.com" frameborder="0">
+
+        </iframe>
+ </p>
+
+</body>
+</html>
