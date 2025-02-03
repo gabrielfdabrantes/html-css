@@ -13,6 +13,9 @@
             height: 400px;
             border: 2px solid black;
         }
+
+
+       
     </style>
 </head>
 <body>
@@ -29,7 +32,8 @@
 
     <!--Nesse exemplo, o 'id' é opcional mas o 'name' é obrigatório.-->
     <!--Para usar páginas do documento no iframe utilizando links para acessá-lo, é necessário inserir o atributo 'name' e dentro do link inserir um target com o mesmo nome desse atributo.-->
-    <iframe id="tela" name="frame" src="" frameborder="1"></iframe>
+    <!--Para adicionar um conteúdo perosnaliado dentro do iframe, trocar a propriedade 'src' por 'srcdoc' e inserir os compponentes nela.-->
+    <iframe id="tela" name="frame" srcdoc="<h3>É possível adicionar um conteúdo personalizado dentro do iframe</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsum alias assumenda itaque accusantium vero impedit a, quidem eos quo inventore labore perspiciatis, dolores ducimus doloribus pariatur, harum excepturi deleniti.</p><img src='imagens/bob-sponja.jpg'> " ></iframe>
 
     <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsum alias assumenda itaque accusantium vero impedit a, quidem eos quo inventore labore perspiciatis, dolores ducimus doloribus pariatur, harum excepturi deleniti.Maiores molestiae magni explicabo itaque, nam impedit, enim aliquam quibusdam expedita, culpa mollitia inventore natus deserunt nesciunt? Eum doloremque error accusantium beatae labore ab molestiae necessitatibus. Tempora soluta quos dicta!</p>
 </body>
