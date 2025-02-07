@@ -13,21 +13,23 @@
 <body>
     <h1>Principais formatações</h1>
 
-    <h2>Negrito / Destaque</h2> <!-- usar sempre <strong> -->
-    <p>Nesta frase temos um <b>termo em negrito</b> usando a tag &lt;b&gt; (não semântica).</p>
+    <h2>Destaque / Negrito</h2> <!-- usar sempre <strong> -->
     <p>Nesta frase, tenho um <strong>termo em destaque</strong> usando a tag &lt;strong&gt; (semântica).</p>
+    <p>Nesta frase temos um <b>termo em negrito</b> usando a tag &lt;b&gt; (não semântica).</p>
 
-    <h2>Itálico / Ênfase</h2> <!-- usar sempre <em> -->
-    <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag &lt;i&gt; (não semântica).</p>
+    <h2> Ênfase / Itálico</h2> <!-- usar sempre <em> -->
     <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag &lt;em&gt; (semântica).</p>
+    <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag &lt;i&gt; (não semântica).</p>
 
     <h2>Texto marcado</h2>
     <p>Podemos criar também <mark>um texto marcado</mark> usando a tag &lt;mark&gt;.</p>
-    <p>E no outro parágrafo, temos <mark style="background-color: yellow;">outro texto marcado</mark> no final. A cor está diferente pois foii utilizado um estilo CSS.</p>
+    <p>E no outro parágrafo, temos <mark style="background-color: yellow;">outro texto marcado</mark> no final. A cor está diferente pois foi utilizado um estilo CSS.</p>
 
-    <h2>Texto grande e pequeno</h2> <!-- Para criar textos grandes e pequenos deve-se usar o CSS, pois é referente a estilo.-->
-    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse parágrafo.</p> 
-    <!--A tag <big> já está obsoleto. A tag <small> não pois existe um signficado para ela, como as letras pequenas que existem em um contrato.-->
+    <h2>Texto grande e pequeno</h2> 
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse parágrafo (não semântica).</p> 
+
+    <!-- Para criar textos grandes e pequenos deve-se usar o CSS, pois é referente ao estilo.-->
+    <!--A tag <big> já está obsoleta. A tag <small> não pois existe um signficado para ela, como as letras pequenas que existem em um contrato.-->
 
     <h2>Texto deletado</h2> <!-- usar sempre <del> -->
     <p>Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser lido, mas não considerado, usando a tag &lt;del&gt; (semântica).</p> 
@@ -37,10 +39,10 @@
     <p>Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois, usando a tag &lt;ins&gt; (semântica).</p>
     <p>Existe também o <u>sublinhado</u> com a tag &lt;u&gt; (não semântica).</p>
 
-    <h2>Texto sobrescrito</h2>
+    <h2>Texto sobrescrito</h2> <!-- usar sempre <sup> -->
     <p>Para inserir coisas do tipo x<sup><strong>20</strong></sup>+3. Usar a tag &lt;sup&gt;.</p>
     
-    <h2>Texto subscrito</h2>
+    <h2>Texto subscrito</h2> <!-- usar sempre sub -->
     <p>Para inserir coisas do tipo H<sub><strong>2</strong></sub>O. Usar a tag &lt;sub&gt;.</p>
 </body>
 </html>

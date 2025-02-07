@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
-/* Todo id em HTML é repreentado com # em CSS (apenas 1 elemento por documento) */
-/* Toda class em HTML é representado com . em CSS (vários elementos) */
+/* 
+    - Todo id em HTML é repreentado com # em CSS (apenas 1 elemento por documento)
+    -   Toda class em HTML é representado com . em CSS (vários elementos) */
 
 body {
     background-color: rgb(197, 243, 197);

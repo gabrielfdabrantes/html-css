@@ -5,22 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gradiente em CSS</title>
     <style>
-        /* Configurações globais da CSS. */
+        /* 
+        Configurações globais da CSS. Ao utilizar '*', toda configuração dentro dela valerá para todos os elementos da página.
+         */
+
         *{ 
             height: 100%;
         }
 
         body{ 
-            /* Para fazer um degradê é necessário colocar a propriedade background-image, usando a função linear-gradient. */
-            /* Caso queira usar um degradê em círculo, inserir a função radial-gradient e, ao invés de inserir o ângulo, colocar "circle" */
+            /* Para fazer um degradê é necessário colocar a propriedade 'background-image', usando a função 'linear-gradient' */
+            /* Caso queira usar um degradê em círculo, inserir a função 'radial-gradient' e, ao invés de inserir o ângulo, colocar 'circle' */
             
-            background-image: linear-gradient(to top, #ffffff, #0000ff);
+            background-image: linear-gradient(to left, #ffffff, #0000ff);
             background-attachment: fixed;
+            color: white;
+        }
+
+        .decor {
+            text-decoration: underline;
+            color: white;
         }
     </style>
 </head>
 <body>
     <h1>Testando Gradientes</h1>
-
+    <h1>
+        <a href="cor4.html"  class="decor">Testando Gradientes em círculo</a>
+    </h1>
 </body>
 </html>

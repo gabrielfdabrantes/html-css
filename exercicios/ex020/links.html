@@ -14,26 +14,25 @@
 > = children
 */
 
-        a {
+        a{
             color: red;
             text-decoration: none;
         }
 
-        a:visited {
+        a:visited{
             color: darkred;
         }
 
-        a:hover {
+        a:hover{
             color: black;
             text-decoration: underline;
-            
         }
 
-        a:active {
+        a:active{
             color: yellow;
         }
 
-        a::after {
+        a::after{
             content: ' (link)';
             text-decoration: none;
             font-weight: normal;
@@ -41,7 +40,7 @@
         }
 
         .especial {
-            background-color: lightgoldenrodyellow;
+            background-color: yellow;
         }
 
         .especial::before {
@@ -53,9 +52,27 @@
 <body>
     <h1>Personalizando links</h1>
     <ul>
-        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório GitHub</a></li>
-        <li><a href="https://youtube.com/cursoemvideo/" target="_blank" class="especial">Canal do Youtube</a></li>
-        <li><a href="https://www.cursoemvideo.com" target="_blank">Site do CursoEmVídeo</a></li>
+        <li>
+            <a href="https://gustavoguanabara.github.io" target="_blank">Repositório GitHub</a>
+        </li>
+
+        <li>
+            <a href="https://youtube.com/cursoemvideo/" target="_blank" class="especial">Canal do Youtube</a>
+        </li>
+
+        <li>
+            <a href="https://www.cursoemvideo.com" target="_blank">Site do CursoEmVídeo</a>
+        </li>
     </ul>
 </body>
 </html>
+
+<!-- Pseudo-elemento mexem diretamente no conteúdo periférico do elemento. Pode agir nas classes, elementos, id's... -->
+
+<!--
+    Exemplos de pseudo-elementos:
+        ::before
+        ::after
+        ::first-letter
+        ::first-line
+-->

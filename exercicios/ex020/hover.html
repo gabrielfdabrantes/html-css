@@ -6,21 +6,24 @@
     <title>Exemplo de Hover</title>
     <style>
         body{
-            font-family: Arial, Helvetica, sans-serif;
+             font-family: Arial, Helvetica, sans-serif;
         }
 
-        div > p { /* o seletor ">" signfica que a div tem um filho que é o parágrafo */
-                display: none; /* esse display é usado para ocultar o elemento da página web. */
+        /* o seletor '>' signfica que a div tem um filho que é o parágrafo */
+        div > p{ 
+                display: none;
+         /* essa declaração é usada para ocultar o elemento da página web. */
         }
 
-        div:hover > p {
-            display: block;
-            color: white;
-            background-color: red;
-            width: 300px;
-        }
         div:hover {
             color: red;
+        }
+
+        div:hover > p{
+                      display: block;
+                      color: white;
+                      background-color: red;
+                      width: 116px;
         }
     </style>
 </head>

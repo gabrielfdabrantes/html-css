@@ -7,6 +7,7 @@
 </head>
 <body>
     <h1>Trablhando com listas</h1>
+
     <h2>Listas Ordenadas</h2>
     <ol type="I"> <!--1 (padão) A a I i-->
         <li>Acordar</li>
@@ -39,7 +40,7 @@
             <li>Delphi</li>
         </ol>
         <li>Novas</li>
-        <ol type="a" start="5">
+        <ol type="a" start="5"> <!-- ao adicionar o atributo "start" os elementos irão começar a partir do valor dado. Mesmo que o tipo seja emletra ou em algarismo romano, deve-se indicar utilizando número.-->
             <li>PHP</li>
             <li>Python</li>
             <li>JavaScript</li>
@@ -47,27 +48,31 @@
         </ol>
     </ol>
 
-<!-- É posível juntar listas ordenadas e não ordenadas. As listas internas sempre terão deslocamento para a direita e o tipo delas, por padrão, sempre mudam.-->
+<!-- É possível adicionar lista dentro de lista e mesclar listas ordenadas e não ordenadas. As listas internas sempre terão um deslocamento para a direita. -->
 
     <h2>Meus jogos favoritos</h2> <!--Exemplo de listas mistas.-->
     <ol>
          <li>Nitendo</li>
-            <ul type="disc">
+            <ul>
              <li>Mario Bros</li>
-            <ul type="square">
+            <ul>
              <li>Mario Bros 2</li>
              <li>Ninja Gaiden</li>
         </ul>
             <li>Mario Lost Leves</li>
          </ul>
+
     <br>
+
         <li>SuperNitendo</li>
             <ul>
              <li>Mario Kart</li>
              <li>Donkey Kong</li>
              <li>Pokemon</li>
             </ul>
+
     <br>   
+
         <li>PlayStation</li>
         <ul>
             <li>PES</li>
@@ -76,15 +81,16 @@
         </ul>
     </ol>
 
-    <!-- Usada como uma espécie de dicionário, além de ajudar os mecanismos de busca. -->
+    <!-- As listas de definição são usadas como uma espécie de dicionário, além de ajudar os mecanismos de busca. -->
     <h2>Listas de definição</h2>
+
     <dl> <!-- definition list-->
         <dt>HTML</dt> <!-- definition term -->
-        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd> <!-- definition description-->
+            <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd> <!-- definition description-->
         <dt>CSS</dt>
-        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+            <dd>Linguagem de marcação para a criação do design de um site.</dd>
         <dt>JavaScript</dt>
-        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+            <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
     </dl>
 </body>
 </html>

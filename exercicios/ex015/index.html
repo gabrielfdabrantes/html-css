@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estilos externos</title>
-
-    <!-- esse link que irá levar a folha de estilo para outro documento. Deve ser colocando logo abaixo do <title> -->
     <link rel="stylesheet" href="style.css">
+     <!-- esse link que irá levar a folha de estilo para outro documento. Deve ser colocando logo abaixo do <title> -->
 </head>
 
 <!-- o CSS external é o mais indicado. apenas com um link, dentro do head, fará com que a estilização seja contemplada por todos os documentos desse arquivo, independente do números de páginas que houver.-->
- <!-- em relação a prioridade, o CSS external é o menor pois ele é mais generalista que o CSS internal e o CSS inline.-->
+ <!-- em relação a prioridade, o CSS external é o menor pois ele é menos específico que o CSS internal e o CSS inline.-->
     
 <body>
     <h1>Capítulo 1</h1>
@@ -23,7 +22,9 @@
 <h1>Capítulo 2</h1>
 <h2>Capítulo 2.1</h2>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, porro eum dolore iure, doloremque laboriosam similique fugit quaerat blanditiis libero expedita veritatis nemo laudantium eligendi tempore dignissimos soluta labore ut?</p>
-<p><a href="Página02.html" target="_self" rel="next">Ir para a página 2</a></p>
+<p>
+    <a href="Página02.html" target="_self" rel="next">Ir para a página 2</a>
+</p>
 </body>
 </html>
 

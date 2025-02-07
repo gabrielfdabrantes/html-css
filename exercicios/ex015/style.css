@@ -1,5 +1,6 @@
-/* REGRA CHARSET CASO HAJA PROBLEMAS COM ACENTUAÇÃO */  
 @charset "UTF-8";
+
+/* Essa regra ('@') é adicionada para evitar qualquer problema com acentuação.  */  
   
 body {
     background-color: aqua;

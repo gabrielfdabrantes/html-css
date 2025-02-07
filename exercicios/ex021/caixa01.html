@@ -5,55 +5,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modelo de caixas</title>
     <style>
-        h1{  /*  box-level */
-            
+        *{
+            margin: 0;
+            padding: 0;
+        }
 
+        h1#ex1{  
+        /*  o h1 é do tipo box-level */
             background-color: lightblue;
             height: 300px;
             width: 300px;
+            
             /* chamado de box-sizing. */
 
             border-width: 30px;
             border-style:solid;
             border-color: darkblue;
-            /* border: 10px solid darkblue; */
+            /* shorthand border: 30px solid darkblue; */
 
-            padding-top: 10px;
-            padding-right: 10px;
-            padding-bottom: 10px;
-            padding-left: 10px;
-            /* padding: 10px 30px 20px 10px (Top, right, bottom, left) */
-            /* padding: 10px (caso as 4 medidas forem iguais.) */
-            /* padding: 10px 20px (o primeiro representa cima e baixo; o segundo representa direita e esquerda.) */
-            /* padding é o espaçamento entre o texto e a borda.\, ou seja, da borda para dentro. */
+           padding: 10px;
+            /* shorthand padding: 10px (caso as 4 medidas forem iguais) */
+            /* shorthand padding (medidas diferentes): 10px 30px 20px 10px (Top, right, bottom, left) */
+            /* shorthand padding: 10px 20px (o primeiro representa cima e baixo; o segundo representa direita e esquerda.) */
 
-            margin-top: 50px;
-            margin-right: 20px;
-            margin-bottom: 40px;
-            margin-left: 20px;
+            /* padding é o espaçamento entre o texto e a borda, ou seja, da borda para dentro. */
+
+            margin-top: 30px;
+            margin-right: 30px;
+            margin-bottom: 30px;
+            margin-left: 30px;
             /* margin segue a mesma regra do padding. */
-            /* margin: 20px auto 40px auto (dessa forma irá centralizar automaticamente a caixa.) */
-            /* margin é da borda para fora */
+            /* ao adicionar a "margin: auto;" o conteúdo será centralizado. c*/
 
-            outline-width: 5px;
+            /* margin é o espaçamento da borda para fora. */
+
+            /* outline-width: 5px;
             outline-style: dashed;
-            outline-color: tomato;
+            outline-color: tomato; */
             /* outline segue a mesma regra do border. */
             /* essa propriedade é pouco utilizada. */
 
             /* A ordem para o indicar não é uma regra, mas o indicado é colocar do top ao left, no sentido horário. Isso irá ajudar quando for usar shorthand, que deve ser nessa sequência. */
-            
         }
 
-        a{ /* iline-level */
+        a{ 
+        /* o link é do tipo iline-level */
+
             border: 10px solid lightcoral;
             padding: 10px;
+        }
+
+        h1#ex2{
+            width: 300px;
+            height: 300px;
+            border: 30px solid black;
+            padding: 10px;
+            margin: 30px;
+            box-sizing: border-box;
         }
     </style>
 </head>
 <body>
-    <h1>Exemplo de caixa box-level</h1>
+    <h1 id="ex1">Exemplo de caixa box-level.</h1>
+    <h1 id="ex2">Outro exemplo de caixa</h1>
+        <br><br>
     <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de inline-level</a>. <p>Criando esse paragrafo dentro do parágrafo</p>Vamos ver como tudo isso funciona.
     </p>
 </body>
 </html>
+
+<!-- O "box-level" sempre inicia em uma linha nova e sempre irá ocupar a largura total da tela. (ex: <div>)-->
+ <!-- O "inline-level" continua na mesma linha do elemento e não quebra linha. (ex: <span>)-->
+
+<!--
+    Mais exemplos para box-level:
+    - h1 - h6
+    - p
+    - main
+    - header
+    - nav
+    - article
+    - aside
+    - footer
+    - form
+    - video
+    - address
+    - blockquote
+    - canvas
+    - dd - dl - dt
+    - fieldset
+    - figcaption
+    - figure
+    - hr
+    - ol - ul - li
+    - noscript
+    - pre
+    - section
+    - table
+    - tfoot
+-->
+
+<!--
+    Mais exemplos para inline-level:
+    - a
+    - abbr
+    - acronym
+    - bdo
+    - br
+    - button
+    - cite
+    - code
+    - dfn
+    - em
+    - img
+    - input
+    - kbd
+    - label
+    - map
+    - object
+    - output
+    - q
+    - samp
+    - script
+    - select
+    - small
+    - span
+    - strong
+    - sub - sup
+    - textarea
+    - tt
+    - var
+-->
+
+<!-- box-sizing: content-box (padrão). Quando é utilizado essa propriedade, as dimensões de um elemento são calculadas da seguinte forma: width + padding + border = tamanho do elemento -->
+ <!-- ao utilizar a propriedade "box-sizing: border-box;" o valor deifinido pelo 'width' e 'height' será diminuido do valor da 'margin' e do 'border'-->

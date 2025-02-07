@@ -6,20 +6,20 @@
     <title>Trabalhando com links</title>
 </head>
 <body>
-    <!-- Usar o atributo target com o valor _blank quando quer que o link clicado abra outra aba e usar o valor _self quando quiser que abra na mesma aba.-->
-     <!-- Normalmente o _blank é usado para indicar links externos e o _self para navegar dentro do próprio site.-->
+    <!-- Usar o atributo "target" com o valor "_blank" quando quiser que o link clicado abra em outra aba e usar o valor "_self" quando quiser que abra na mesma aba.-->
+    <!-- Normalmente o "_blank" é usado para indicar links externos e o "_self" para navegar dentro do próprio site.-->
 
-    <h1>Usando links externos</h1>  <!-- usar o atributo rel com o valor external para indicar que o link é externo.-->
+    <h1>Usando links externos</h1>  <!-- usar o atributo "rel" com o valor "external" para indicar que o link é externo.-->
     <p>Você pode acessar meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público no GitHub</a></p>
     <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">canal gratuito no Youtube<a/></p>
 
-<h1>Usando links internos</h2> <!-- usar o atributo rel com o valor next para indicar que esse link irá ser encaminhado para a página seguinte.-->
+<h1>Usando links internos</h2> <!-- usar o atributo "rel" com o valor "next" para indicar que esse link irá ser encaminhado para a página seguinte.-->
 <p>Essa é minha primeira página do site. Se você quiser, pode acessar a minha <a href="pag002.html" target="_self" rel="next">segunda página</a></p>
 <p>Você também pode acessar a nossa <a href="noticias/pag003.html" target="_self" rel="next">página de notícias</a></p>
 
-<!-- além desses valores do atributo rel, também existem os valores author, que indica que o link é para o site do autor do artigo e o valor nofollow, que indica que o link é para um site não endossado.-->
+<!-- além desses valores do atributo "rel", também existem os valores "author", que indica que o link é para o site do autor do artigo e o valor "nofollow", que indica que o link é para um site não endossado.-->
 
-<h1>Links para Download</h1> <!-- Sempre necessário usar o atributo download e colocar o arquivo nele e o atributo type para indicar que tipo de arquivo está sendo feito o download.-->
+<h1>Links para Download</h1> <!-- Sempre necessário usar o atributo "download" e adicionar o arquivo nele e o atributo "type" para indicar que tipo de arquivo está sendo feito o download.-->
 <ul>
     <li>
         <a href="livro/10-ligacoes_em_toda_parte.pdf" download="Livro/10-ligacoes_em_toda_parte.pdf" type="application/pdf">Baixar o livro em PDF

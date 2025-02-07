@@ -11,13 +11,15 @@
         Este vídeo está hospedado no meu próprio servidor.
     </p>
 
-    <video controls width="500" autoplay >
-        <!-- de cima para baixo, o servidor tentará colocar o primeiro e caso não carregue, tentará o segundo e depois o terceiro. Caso o servidor não consiga carregar nenhum dos 3, nesse exemplo, irá carregar a mensagem que não há compatibilidade.-->
+    <video width="500" controls>
+        <!-- Os padrões de vídeo mais utilizados e aceitos são: mp4, webm e ogv.-->
+
+        <!-- de cima para baixo, o servidor tentará carregar o primeiro vídeo e, caso não carregue, tentará o segundo e depois o terceiro. Caso o servidor não consiga carregar nenhum dos 3, nesse exemplo, irá carregar a mensagem que o vídeo não possui compatibilidade.-->
         <source src="midia/video-01.mp4" type="video/mp4">
         <source src="midia/video-01.webm" type="video/webm">
         <source src="midia/video-01.ogv" type="video/ogg">
         <p>
-            Seu computador não tem compatibilidade com reprodução de vídeos
+            Seu computador não tem compatibilidade com reprodução de vídeos.
         </p>
     </video>
 
