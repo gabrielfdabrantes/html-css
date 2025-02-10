@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" autocomplete="name" maxlength="40" placeholder="Nome completo" required>
+        </p>
+
+        <p>
+            <label for="imedia">Média</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" step="0.1" placeholder="0 a 10" required>
+        </p>
+
+        <p>
+            <label for="idia">Dia da prova</label>
+            <input type="date" name="dia" id="idia" value="2025-01-01" required >
+        </p>
+
+        <p>
+            <label for="imes">Período letivo</label>
+            <input type="month" name="mes" id="imes" required value="2025-01">
+        </p>
+
+        <p>
+            <label for="ihora"></label>
+            <input type="time" name="hora" id="ihora" required>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+</body>
+</html>
+
+<!--
+   - Um <input> do tipo 'number' aceita apenas números.
+   - O atributo 'min' indica o mínim da caixa numérica e 'máx' indica o máximo que essa caixa pode chegar. 
+   - O atributo 'step' indica de quanto em quanto o número irá mudar.
+   - Deve ser escrito com '.' mas no formulário pode ser escrito com ',' 
+-->
+
+ <!--  O atributo 'value' já sugere um determinado valor pré-definido (essa função é feita com javascript, não será manualmente a adição). Ao adicionar o 'value' é excluido automaticamente o 'placeholder'-->
+
+ <!-- Um <input> do tipo 'month' é usado para indicar o mês e o ano. -->
+
+ <!-- Um <input> do tipo 'date' cria uma caixa com o dia/mês/ano-->
+
+ <!-- Um <input> do tipo 'time' cria uma caixxa para adicionar a hora.-->
+
