@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="isu">Usuário:</label>
+            <input type="text" name="usu" id="isu" required minlength="5" maxlength="15" size="15" placeholder="nome do usuário" autocomplete="username">
+        </p>
+        <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" required minlength="8" size="20" placeholder="mínimo 8 caracteres" autocomplete="current-password">
+            </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>    
+</body>
+</html>
+<!-- Normalmente criamos o formulário com uma <div>-->
+
+<!-- Ao utilizar o valor do atributo 'type' como 'password' irá criar automaticamente as bolinhas no lugar do texto digitado, escondendo a senha.-->
+
+ <!-- Para que o formulário seja enviado apenas quando as caixas sejam preenchidas, é necessário adicionar um atributo ao "input" chamado 'required'-->
+
+<!-- Para adicionar um número mínimo e/ou um número máximo de caracteres a ser adicionado em cada input, é necessário adicionar o atributo 'minlength' e/ou 'maxlength' (comprimento mínimo e máximo, respectivamente) e o valor com o número de caracteres desejados -->
+
+<!-- A questão da senha e o usário estarem corretos, ou não, para que o formulário seja enviado é feito com PHP, por exemplo. -->
+
+<!-- O atributo 'size' indica quantas letras a caixa irá mostrar por vez. Isso não diz respeito a quantidade de caracteres que será possível inserir, apenas o que será visualizado.-->
+
+ <!-- O atributo 'placeholder' irá fazer com que apareça uma dica dentro da caixa. Não é um auto-preenchimento.-->
+
+<!-- Na prática, os formulários estão com o atributo "autocomplete" ligado, pois ajuda na hora de preencher. Para informar ao navegador a funcionalidade de cada caixa, é ncessário manter o 'autocomplete' dentro do <form> com o valor 'on' e, dentro de cada <input> adicionar o 'autocomplete' indicando o valor desejado (nome do usuário, senha, Código Postal, etc)m-->
