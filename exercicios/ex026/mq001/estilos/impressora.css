@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/* Estilo para impressoras */
+
+*{
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    /* fontes 'monoespaçadas' e com 'serifa' são mais fáceis de ler no papel impresso */
+    
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+menu{
+    display: none;
+}
+
+header > h1 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+article{
+    width: 100%;
+}
+
+article::after{
+    /* o pseudo-elemento ::after indica que depois do meu elemento irá ocorrer uma ação */
+
+    content: 'Esse artigo foi impresso através do site www.cursoemvideo.com';
+}
