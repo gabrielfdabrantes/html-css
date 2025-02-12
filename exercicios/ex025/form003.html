@@ -7,6 +7,7 @@
 </head>
 <body>
     <h1>Teste de formulário</h1>
+    <h2>Formulário do tipo Número, Data, Mês e Hora</h2>
     <form action="cadastro.php" method="get" autocomplete="on">
         <p>
             <label for="inome">Nome:</label>
@@ -44,16 +45,18 @@
 
 <!--
    - Um <input> do tipo 'number' aceita apenas números.
-   - O atributo 'min' indica o mínim da caixa numérica e 'máx' indica o máximo que essa caixa pode chegar. 
-   - O atributo 'step' indica de quanto em quanto o número irá mudar.
-   - Deve ser escrito com '.' mas no formulário pode ser escrito com ',' 
+   - O atributo "min" indica o valor mínimo da caixa numérica e "máx" indica o valor máximo que essa caixa pode chegar. 
+   - O atributo "step" indica de quanto em quanto o número irá mudar.
+   - O valor do "step" deve ser codificado com ponto (.) mas no formulário o visitante poderá escrever com vírgula (,) 
 -->
 
- <!--  O atributo 'value' já sugere um determinado valor pré-definido (essa função é feita com javascript, não será manualmente a adição). Ao adicionar o 'value' é excluido automaticamente o 'placeholder'-->
-
- <!-- Um <input> do tipo 'month' é usado para indicar o mês e o ano. -->
+ <!--  O atributo "value" já sugere um determinado valor pré-definido (essa ação é feita com JavaScript, não será manualmente a adição). Ao adicionar o "value" elimina automaticamente o "placeholder" -->
 
  <!-- Um <input> do tipo 'date' cria uma caixa com o dia/mês/ano-->
 
- <!-- Um <input> do tipo 'time' cria uma caixxa para adicionar a hora.-->
+ <!-- Um <input> do tipo 'month' é usado para indicar o mês e o ano -->
+  
+ <!-- Um <input> do tipo 'time' cria uma caixa para adicionar a hora.-->
+
+ <!-- Alguns desses controles podem não ser exibidos de forma igual em todos os navegadores -->
 

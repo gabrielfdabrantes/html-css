@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <h2>Formulário do tipo Radio e Checkbox</h2>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset>
+         <legend>Sexo</legend>
+         <input type="radio" name="Sexo" id="isexmas" value="M" checked>
+         <label for="isexmas">Masculino</label>
+         <input type="radio" name="Sexo" id="isexfem" value="F">
+         <label for="isexfem">Feminino</label>
+         </fieldset>
+       
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesfut">
+            <label for="iesfut">Futebol</label><br>
+            <input type="checkbox" name="esbas" id="iesbas">
+            <label for="iesbas">Basquete</label><br>
+            <input type="checkbox" name="esnat" id="iesnat">
+            <label for="iesnat">Natação</label><br>
+            <input type="checkbox" name="esten" id="iesten">
+            <label for="iesten">Tênis</label>
+            
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
+
+<!-- Lembre-se: para relacionar o <input> com o elemento, é necessário envelopar com um <label> sendo o atributo "for" do <label> o mesmo usado no atributo "id" do <input> -->
+
+<!-- O <input> 'checkbox' é usado para múltiplas escolhas. Por padrão, a caixinha de seleção é quadrada -->
+
+<!-- O <input> 'radio' é usado para selecionar apenas uma das alternativas. Por padrão, a caixinha de seleção é circular -->
+
+  <!-- No 'radio' é necessário que o "name" dado em todos os <input> sejam IGUAIS -->
+
+<!-- Se quiser que alguma das aternativas já apareça pré-marcada, adicionar o atributo "checked". Dentro do tipo 'radio' não é possível colocar o 'checked' em mais de um <input> -->

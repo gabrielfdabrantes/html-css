@@ -12,9 +12,10 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
+    <h2>Formulários simples do tipo Texto</h2>
     <form action="cadastro.php" method="get" autocomplete="off">
         <p>
-            <label for="inome"> Nome: </label> 
+            <label for="inome"> Nome:</label> 
             <input type="text" name="nome" id="inome">
         </p>
 
@@ -22,33 +23,34 @@
             <label for="isobrenome">Sobrenome:</label> 
             <input type="text" name="sobrenome" id="isobrenome">
         </p>
+                <!-- botão de enviar-->
         <p><input type="submit" value="Enviar"></p>
     </form>
 </body>
 </html>
-<!-- Todo formulário deve estar entre as tags <form></form> -->
+<!-- Todo formulário deve estar entre as tags <form> </form> -->
 
- <!-- Para criar o lugar para preencher o formulário é usar a tag <input> com atributo "text". Toda caixa de texto tem que ter 'name' e 'id' -->
+ <!-- Para criar o lugar para preencher o formulário é usar a tag <input> com atributo type="text". Toda caixa de texto tem que ter 'name' e 'id' -->
 
-<!-- Para criar o botão de enviar, usar a tag <input> com atributo "submit". O 'value' será o nome que aparecerá dentro da caixa do botão.-->
+<!-- Para criar o botão de enviar, usar a tag <input> com o atributo type="submit". O 'value' será o nome que aparecerá dentro da caixa do botão.-->
 
- <!-- Não existe uma ligação entre o nome escrito no parágrafo e o input adicionado ao criar o formulário de maneira simples. Para que os mecanismos de busca saibam que existem uma ligação entre eles, é necessário fazer algumas configurações extras.-->
+ <!-- Não existe uma ligação entre o texto escrito no parágrafo e o <input> adicionado ao criar o formulário de maneira simples. Para que os mecanismos de busca saibam que existem uma ligação entre eles, é necessário fazer algumas configurações extras: -->
 
 <!-- Para indicar ao navegador e mecanismos de busca que existem uma ligação, é necessário utilizar a tag <label> --> 
 
-<!-- O <label> vem com o atributo 'for' de forma padrão. o valor que deve ser adicionado no 'for' é o mesmo do 'id', indicado no <input>-->
+<!-- O <label> vem com o atributo 'for' de forma padrão. o valor que deve ser adicionado no 'for' é o mesmo do 'id', indicado no <input> -->
 
-<!-- Para desligar o preenchimento automático do formulário, adicionar o atributo "autocomplete='off'" ao <form>-->
+<!-- Para desligar o preenchimento automático do formulário, adicionar o atributo "autocomplete='off'" ao <form> -->
 
 <!-- Normalmente, os dados são enviados para alguma linguagem de programação. Para que isso aconteça, adicionar o atributo "action" ao <form> e indicar o caminho para onde será enviado.-->
 
-<!-- Para linguagens como PHP e HTML, o 'name' é mais importante; para o JAVASCRIPT o 'id' é mais utilizado, inclusive para o uso do <label>. -->
+<!-- Para linguagens como PHP e HTML, o "name" é mais importante; para o JAVASCRIPT o "id" é mais utilizado, inclusive para o uso do <label> -->
 
-<!-- Não se faz formulário sem relacionar o <label> ao <input>. Essa é a forma mais profissional de fazer.-->
+<!-- Não se faz formulário sem relacionar o <label> ao <input>. Essa é a forma mais profissional de fazer -->
 
 <!-- Existem 2 tipos de métodos para envio de formulário:
-    - method="GET" (padrão) - ele adiciona na URL os dados. Usar esse método quando os dados não forem sensíveis e também se quiser que o link seja compartilhável. Quando envia dados por 'GET' só pode enviar até 3000bits (+/- 3000 letras).
-    - method="POST" - torna invisível os dados na URL. Isso não torna os dados protegidos, apenas é enviado de outra maneira. Usar quando houver dados sensíveis (caso esteja trabalhando com dados de cartão de crédito e senhas, por exemplo, trabalhar com 'HTTPS' para proteger dados.), quando não quer que os dados apareçam na URL, quando houver mais de 3000 bits e se quiser fazer envio de arquivos (fotos, vídeos, etc).
+    - method="GET" (padrão) - ele adiciona na URL os dados. Usar esse método quando os dados não forem sensíveis e também se quiser que o link seja compartilhável. Quando envia dados por 'GET' só pode enviar até 3000 bytes (+/- 3000 letras).
+    - method="POST" - torna invisível os dados na URL. Isso não torna os dados protegidos, apenas é enviado de outra maneira. Usar quando houver dados sensíveis (caso esteja trabalhando com dados de cartão de crédito e senhas, por exemplo, trabalhar com HTTPS para proteger dados), quando não quer que os dados apareçam na URL, quando houver mais de 3000 bytes e se quiser fazer envio de arquivos (fotos, vídeos, etc).
 -->
     
 <!-- O atributo "method" deve ser adicionado ao <form> -->

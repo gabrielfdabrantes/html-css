@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <h2>Formulário usando a tag &lt;select&gt;, &lt;option&gt;, &lt;optgroup&gt;, &lt;datalist&gt;, &lt;textarea&gt; </h2>
+
+    <form action="cadastro.php" method="post">
+    <p>
+        <label for="iestado">Estado:</label>
+        <select name="estado" id="iestado">
+            <option value="" selected>---Escolha---</option>
+
+            <optgroup label="Região Norte">
+                <option value="AM">AMAZONAS</option>
+                <option value="RR">RORAIMA</option>
+                <option value="AP">AMAPÁ</option>
+                <option value="PA">PARÁ</option>
+                <option value="TO">TOCANTINS</option>
+                <option value="RO">RONDÔNIA</option>
+                <option value="AC">ACRE</option>
+            </optgroup>
+
+            <optgroup label="Região Nordeste">
+                <option value="MA">MARANHÃO</option>
+                <option value="PI">PIAUÍ</option>
+                <option value="CE">CEARÁ</option>
+                <option value="RN">RIO GRANDE DO NORTE</option>
+                <option value="PE">PERNAMBUCO</option>
+                <option value="PB">PARAÍBA</option>
+                <option value="SE">SERGIPE</option>
+                <option value="AL">ALAGOAS</option>
+                <option value="BA">BAHIA</option>
+            </optgroup>
+
+            <optgroup label="Região Centro-Oeste">
+                <option value="MT">MATO GROSSO</option>
+                <option value="MS">MATO GROSSO DO SUL</option>
+                <option value="GO">GOIÁS</option>
+                <option value="DF">DISTRITO FEDERAL</option>
+            </optgroup>
+
+            <optgroup label="Região Sudeste">
+                <option value="SP">SÃO PAULO</option>
+                <option value="RJ">RIO DE JANEIRO</option>
+                <option value="ES">ESPÍRITO SANTO</option>
+                <option value="MG">MINAS GERAIS</option>
+            </optgroup>
+
+            <optgroup label="Região SuL">
+                <option value="PR">PARANÁ</option>
+                <option value="RS">RIO GRANDE DO SUL</option>
+                <option value="SC">SANTA CATARINA</option>
+            </optgroup>
+
+        </select>
+
+    </p>
+        <label for="prof">Profissão:</label>
+        <input type="text" name="prof" id="iprof" list="lstprof">
+        <datalist id="lstprof">
+
+            <option>Professor</option>
+            <option>Desenvolvedor</option>
+            <option>Arquiteto</option>
+            <option>Advogado</option>
+            <option>Engenheiro</option>
+            <option>Médico</option>
+            <option>Contador</option>
+        </datalist>
+
+    <p>
+        <label for="imsg">Mensagem:</label> <br>
+        <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Sua mensagem aqui."></textarea>
+    </p>
+     <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+     </p>
+    </form>
+
+  
+</body>
+</html>
+
+<!-- O elemento <select> adiciona um botão que cria uma lista (não editável). Dentro dele deve ser inserido o elemento <option> que irá demoninar cada ítem dessa lista. Ele é organizado de acordo com a posição colocada no código -->
+
+<!-- É possível agrupar um grupo de <option> com um elemento <optgroup>. Muito usado para separar por sub-categorias, por exemplo, separar os estados do Brasil por região -->
+
+<!-- A tag <datalist> cria uma caixa com opções pré-definidas. Diferentemente do <select>, aqui é possível escrever outra opção além das que já estão pré-definidas dentro da caixa -->
+
+<!-- Para que essa funcionalidade do <datalist> dê certo, é necessário dar um "id" para o <datalist> e adcionar um atributo "list" no <input> de tipo 'text' como mesmo valor.-->
+
+<!-- Para criar uma caixa para enviar uma mensagem, adicionar a tag <textarea> onde é necessário adicionar o "id" e o "name", mas também é necessário adicionar o número de colunas e linhas que essa caixa terá, usando os atributos "cols" e "rows", respectivamente. -->
+
+<!-- Ao usar a tag <textarea> é necessário usar o 'method POST' no <form> por geralmente conter mais de 3k bytes -->
